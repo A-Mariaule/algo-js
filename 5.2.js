@@ -17,6 +17,25 @@ function askTvSerie(){
     return TvSerie
 }
 
-console.log(JSON.stringify(askTvSerie()))
+function randomizeCast(tvSerie){
+    list_cast=tvSerie["Cast_members"]
+    l=list_cast.length
+    randomlist=[]
+    for( i=1;i<=l;i++){
+        random=Math.floor(Math.random()*l);
+        while (randomlist.includes(list_cast[random])){
+            random=Math.floor(Math.random()*l);
+        }
+        randomlist.push(list_cast[random]);
+    }
+    return randomlist   
+    
+}
 
+function newcast(){
+    tvSerie=askTvSerie()
+    newcast_list=randomizeCast(tvSerie)
+    return "The cast of your next series will be"+" "+ newcast_list
+}
 
+console.log(newcast())

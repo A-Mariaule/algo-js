@@ -2,7 +2,7 @@
  * This script display a random integer between 1 to 10.
  * the function rand10() return a random integer between 1 to 10
  * @param none
- * @returns a random integer between 1 to 10
+ * @return a random integer between 1 to 10
  */
 
 

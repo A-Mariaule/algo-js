@@ -1,7 +1,7 @@
 /**
  * This function  return a list of n random elements between 1 to 10.
  * @param  {Number} n an integer
- * @returns {Array} an list of n random number between 1 to 10.
+ * @return {Array} an list of n random number between 1 to 10.
  */
 
 

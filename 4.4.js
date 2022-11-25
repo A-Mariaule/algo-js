@@ -2,8 +2,9 @@ keller5_list=["Arno Volts" ,"Aurélien Mariaule" ,"Aurore Lemaire" ,"Benjamin Po
 
 /**
  *Return a list of n elements, elements are selected randomly in inputAr
- *@param {Arrays} inputAr list of learners
-*@param {Number} n A number, that should be greater than 0 and less than the length of inputAr
+ *@param {Array} inputAr list of learners
+ *@param {Number} n A number, that should be greater than 0 and less than the length of inputAr
+ @return {Array} a list of  learners
  */
 function picklearner(inputAr,n){
     list=[];

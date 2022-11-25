@@ -1,8 +1,8 @@
 /**
- * The function take two point and return the distance between.
+ * The function take two points and return the distance between.
  * @param {Array} A a point in the Cartesian coordinate system
  * @param {Array} B a point in the Cartesian coordinate system
- * @returns d(A,B)=sqrt((y_b-y_a)^2+(x_b-x_a)^2)
+ * @return d(A,B)=sqrt((y_b-y_a)^2+(x_b-x_a)^2)
  */
 
 
