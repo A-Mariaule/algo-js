@@ -7,7 +7,7 @@ if(max<min) {
 }   
 else{
     let current=prompt("Doner un nombre intermédiaire");
-    if (min <= current <= max){
+    if (min <= current && current <= max){
         console.log(current);
     }
 }
