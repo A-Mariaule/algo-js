@@ -5,7 +5,7 @@ function askTvSerie(){
     x=prompt("What is the name of a cast member")
     Cast_members_prompt.push(x)
     while (x!=""){
-        x=prompt("What is the name of a another cast member(press enter if you have finish")
+        x=prompt("What is the name of an another cast member(press enter if you have finish")
         Cast_members_prompt.push(x)
     }
     Cast_members_prompt.pop()
