@@ -18,4 +18,4 @@ function calcDistance(A,B){
 }
 
 // display the distance between two point
-console.log(calcDistance([-2,2],[2,-2]))
+console.log(calcDistance([1,1],[2,2]))

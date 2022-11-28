@@ -38,4 +38,3 @@ function newcast(){
     return "The cast of your next series will be"+" "+ newcast_list
 }
 
-console.log(newcast())

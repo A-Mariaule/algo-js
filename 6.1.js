@@ -14,6 +14,8 @@ class Circle {
 }
 
 let cercle = new Circle(1,5,2);
+
+
 console.log(cercle.xPos)
 console.log(cercle.yPos)
 console.log(cercle.radius)
@@ -21,3 +23,4 @@ cercle.move(1,1)
 console.log(cercle.xPos)
 console.log(cercle.yPos)
 console.log(cercle.surface)
+

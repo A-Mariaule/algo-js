@@ -13,8 +13,9 @@ class Rectangle {
         }
     }
 }
-
-for(i=0;i<10;i++){
+/**Création de rectangle random */
+list_Rect=[]
+for(i=0;i<1000;i++){
     randomx=Math.floor(Math.random() * 101);
     randomy=Math.floor(Math.random() * 101);
     random_width=Math.floor(Math.random() * 101);
@@ -24,18 +25,34 @@ for(i=0;i<10;i++){
     random_length=Math.floor(Math.random() * 101);
     while(random_length==0){
         random_length=Math.floor(Math.random() * 101);
-    }  
+    }    
     Rect_i=new Rectangle(randomx,randomy,random_width,random_length)
+    list_Rect.push(Rect_i)
 }
 
-for(i=0;i<10;i++){
+ /**Liste des rectangles qui sont en contact */
+for (i=0;i<1000;i++){
+    list_collides_i=[]
     j=0
-    while(j!=i){
-        Rect_j=Rect_i
-        console.log(Rect_j)
-    if (Rect_i.collides(Rect_j)){
-        console.log("Le rectangle "+ Rect_i +"touche le rectangle"+ Rect_j)
+    while (j!=1000){
+        if (j==i){
+            j++
+            continue
         }
-    j++
+        else{
+            if(list_Rect[i].collides(list_Rect[j])){
+                list_collides_i.push(list_Rect[j])
+                
+            }
+            j++
+        }
     }
+    console.log(list_collides_i)
 }
+
+
+
+
+
+
+
